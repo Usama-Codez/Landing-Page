@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Saudi Arabia - Destinations</title>
+  </head>
+  <body class="font-['Poppins',_sans-serif] bg-black">
+    <input id="mode-toggle" type="checkbox" class="peer sr-only" />
+    <div
+      class="min-h-screen flex flex-col bg-[var(--surface)] text-[var(--text)] transition-colors duration-500 [--surface:#050505] [--surface-soft:#050505] [--text:#f9fbff] [--muted:#dfe4f1] [--divider:rgba(255,255,255,0.08)] [--thumb:0px] peer-checked:[--surface:#f9fbff] peer-checked:[--surface-soft:#f9fbff] peer-checked:[--text:#0b1323] peer-checked:[--muted:#4c5564] peer-checked:[--divider:rgba(15,23,42,0.12)] peer-checked:[--thumb:40px]"
+    >
+      <header
+        class="relative w-full max-w-[1512px] mx-auto h-[982px] overflow-hidden"
+      >
+        <img
+          src="./assets/images/bg10.jpg"
+          alt="Stars over Saudi desert"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-linear-to-b from-black/50 via-black/10 to-black/80 pointer-events-none"
+        ></div>
+
+        <div class="relative z-10">
+          <nav
+            class="max-w-6xl mx-auto px-6 py-8 flex flex-wrap items-center justify-between gap-6 text-sm text-[var(--text)]"
+          >
+            <div class="flex items-center">
+              <img
+                src="./assets/images/logo.png"
+                alt="Saudi Welcome to Arabia"
+                class="w-[213px] h-[118px] object-contain"
+              />
+            </div>
+            <div
+              class="flex items-center gap-8 text-base font-medium tracking-[0.1em]"
+            >
+              <label for="mode-toggle" class="cursor-pointer select-none">
+                <span class="sr-only">Toggle color theme</span>
+                <span
+                  class="relative flex items-center bg-white px-2 py-1 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.35)] border border-white/40 w-[82px] h-[32px]"
+                >
+                  <span class="flex-1 flex items-center justify-center">
+                    <svg
+                      class="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#606060"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 14.5A8.5 8.5 0 0 1 9.5 3 8.5 8.5 0 1 0 21 14.5Z"
+                      />
+                    </svg>
+                  </span>
+                  <span class="flex-1 flex items-center justify-center">
+                    <svg
+                      class="w-6 h-6"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#0f172a"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="4" fill="#0f172a" />
+                      <path
+                        d="M12 2v2m0 16v2m8-8h2M2 12h2m12.5 6.5 1.5 1.5m-11-11L5.5 5.5m13 0-1.5 1.5m-11 11 1.5 1.5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="absolute left-[4px] w-[36px] h-[24px] rounded-full bg-[#0f172a]/10 transition-transform duration-300 translate-x-[var(--thumb)]"
+                  ></span>
+                </span>
+              </label>
+              <div class="flex items-center gap-6">
+                <a
+                  href="index.html"
+                  class="hover:text-emerald-200 transition uppercase"
+                  >Home</a
+                >
+                <a
+                  href="#members"
+                  class="hover:text-emerald-200 transition uppercase"
+                  >Members</a
+                >
+                <a
+                  href="#gallery"
+                  class="hover:text-emerald-200 transition uppercase"
+                  >Gallery</a
+                >
+              </div>
+            </div>
+          </nav>
+
+          <div class="max-w-[652px] mx-auto px-6 text-center mt-16 space-y-5">
+            <h1 class="text-[64px] leading-[1.05] font-bold">
+              <span class="block">Destinations</span>
+            </h1>
+            <p class="text-lg text-white/80 leading-relaxed">
+              Saudi Arabia is rich in heritage and history. The country is home
+              to hundreds of historically important sites that reveal the depth
+              of culture across the Kingdom.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <main class="bg-[var(--surface)]" id="destinations">
+        <section class="max-w-[566px] mx-auto px-6 py-16 text-center space-y-3">
+          <h2 class="text-4xl font-semibold leading-tight">
+            Best Destinations
+          </h2>
+          <p class="text-[var(--muted)]">
+            Explore the enchanting landscapes of Saudi Arabia,<br
+              class="hidden sm:block"
+            />
+            from the breathtaking deserts to the stunning coastal shores.
+          </p>
+        </section>
+
+        <section
+          class="max-w-6xl mx-auto px-6 grid gap-[10px] md:grid-cols-[476px_417px_476px] justify-center"
+        >
+          <div class="flex flex-col gap-[10px]">
+            <article
+              class="relative overflow-hidden w-[476px] h-[672px] text-left text-white shadow-[0_25px_60px_rgba(0,0,0,0.55)] rounded-[36px]"
+            >
+              <img
+                src="./assets/images/bg2.jpg"
+                alt="Hisma Desert cliffs"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#233b7c]/70 via-transparent to-black/90"
+              ></div>
+              <div
+                class="relative z-10 h-full flex flex-col justify-between p-6"
+              >
+                <div>
+                  <h3 class="text-3xl font-semibold mb-3">
+                    <span
+                      style="font-family: 'Imperial Script', cursive"
+                      class="text-4xl leading-none"
+                      >Hisma</span
+                    >
+                    <span class="block">Desert</span>
+                  </h3>
+                  <p class="text-sm text-white/90">
+                    The Hisma desert is a true marvel of nature, and several
+                    desert oasis.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/d1.png"
+                    alt="Wazeem Al Mulk"
+                    class="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-sm font-semibold">Wazeem Al Mulk</p>
+                    <p class="text-xs text-white/70">Traveller</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="relative overflow-hidden w-[476px] h-[672px] text-left text-white shadow-[0_25px_60px_rgba(0,0,0,0.55)] rounded-[36px]"
+            >
+              <img
+                src="./assets/images/bg5.jpg"
+                alt="Tabuk landscape"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#224873]/70 via-transparent to-black/90"
+              ></div>
+              <div
+                class="relative z-10 h-full flex flex-col justify-between p-6"
+              >
+                <div>
+                  <h3 class="text-3xl font-semibold mb-3">The best of Tabuk</h3>
+                  <p class="text-sm text-white/90">
+                    Tabuk, also spelled Tabouk, the capital city of the Tabuk
+                    Region in northwestern Saudi Arabia.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/d4.png"
+                    alt="Jonatan Pie"
+                    class="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-sm font-semibold">Jonatan Pie</p>
+                    <p class="text-xs text-white/70">Influencer</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <article
+              class="relative overflow-hidden w-[417px] h-[380px] text-left text-white shadow-[0_25px_60px_rgba(0,0,0,0.55)] rounded-[36px]"
+            >
+              <img
+                src="./assets/images/bg3.jpg"
+                alt="Kafd World Trade Centre"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#5f7ca8]/80 via-transparent to-black/90"
+              ></div>
+              <div
+                class="relative z-10 h-full flex flex-col justify-between p-6"
+              >
+                <div>
+                  <h3 class="text-2xl font-semibold mb-3">
+                    Kafd World Trade Centre, Riyadh.
+                  </h3>
+                  <p class="text-sm text-white/90">
+                    The towering structure stands as a testament to Saudi
+                    Arabia’s vision for a thriving business hub.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/d2.png"
+                    alt="Benjamin Voros"
+                    class="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-sm font-semibold">Benjamin Voros</p>
+                    <p class="text-xs text-white/70">Traveller</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="relative overflow-hidden w-[417px] h-[672px] text-left text-white shadow-[0_25px_60px_rgba(0,0,0,0.55)] rounded-[36px]"
+            >
+              <img
+                src="./assets/images/bg6.jpg"
+                alt="AlUla night sky"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#442e55]/70 via-transparent to-black/90"
+              ></div>
+              <div
+                class="relative z-10 h-full flex flex-col justify-between p-6"
+              >
+                <div>
+                  <h3 class="text-3xl font-semibold mb-3">AlUla</h3>
+                  <p class="text-sm text-white/90">
+                    AlUla is located deep in the desert in the northwest of
+                    Saudi Arabia.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/d5.png"
+                    alt="Garrett Parker"
+                    class="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-sm font-semibold">Garrett Parker</p>
+                    <p class="text-xs text-white/70">Traveller</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="flex flex-col gap-[10px]">
+            <article
+              class="relative overflow-hidden w-[476px] h-[672px] text-left text-white shadow-[0_25px_60px_rgba(0,0,0,0.55)] rounded-[36px]"
+            >
+              <img
+                src="./assets/images/bg4.jpg"
+                alt="Al Qarah Mountain"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#c27c7a]/60 via-transparent to-black/90"
+              ></div>
+              <div
+                class="relative z-10 h-full flex flex-col justify-between p-6"
+              >
+                <div>
+                  <h3 class="text-3xl font-semibold mb-3">Al Qarah Mountain</h3>
+                  <p class="text-sm text-white/90">
+                    The mountain’s distinctive rock formations invite
+                    adventurers to explore its hidden treasure.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/d3.png"
+                    alt="John Towner"
+                    class="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-sm font-semibold">John Towner</p>
+                    <p class="text-xs text-white/70">Traveller</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="relative overflow-hidden w-[476px] h-[672px] text-left text-white shadow-[0_25px_60px_rgba(0,0,0,0.55)] rounded-[36px]"
+            >
+              <img
+                src="./assets/images/bg7.jpg"
+                alt="Taif lights"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#0f1634]/70 via-transparent to-black/95"
+              ></div>
+              <div
+                class="relative z-10 h-full flex flex-col justify-between p-6"
+              >
+                <div>
+                  <h3 class="text-3xl font-semibold mb-3">
+                    The best things to do in Taif
+                  </h3>
+                  <p class="text-sm text-white/90">
+                    Taif is a city and governorate in the Makkah Region of Saudi
+                    Arabia.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3">
+                  <img
+                    src="./assets/images/d6.png"
+                    alt="Cristina Gottardi"
+                    class="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div>
+                    <p class="text-sm font-semibold">Cristina Gottardi</p>
+                    <p class="text-xs text-white/70">Traveller</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <div class="max-w-6xl mx-auto px-6 mt-10 text-right">
+          <a
+            href="#gallery"
+            class="text-sm uppercase tracking-[0.3em] text-[var(--muted)] hover:text-[var(--text)] transition"
+            >See More</a
+          >
+        </div>
+
+        <section class="w-full py-8 sm:py-12 md:py-16">
+          <div class="max-w-[1513px] mx-auto px-6 md:px-[60px]">
+            <div
+              class="w-full max-w-[1393px] h-[220px] md:h-[247px] rounded-[127px] flex flex-col md:flex-row items-center justify-between relative overflow-hidden bg-[url('./assets/images/whatsapp.png')] bg-cover bg-center"
+            >
+              <!-- Gradient overlay to improve contrast -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-[#047f01] via-white/20 to-[#047f01] mix-blend-overlay opacity-90"
+              ></div>
+              <div
+                class="flex items-center relative z-10 px-6 md:px-12 py-6 md:py-0"
+              >
+                <p class="text-white font-semibold text-lg md:text-2xl">
+                  Contact us on Whatsapp
+                </p>
+              </div>
+
+              <button
+                class="bg-white rounded-full hover:bg-gray-100 transition duration-300 relative z-10 flex items-center justify-center w-44 md:w-[231px] h-12 md:h-[76px] mr-6 md:mr-12"
+              >
+                <span class="text-[#047F01] text-base md:text-xl"
+                  >Start Chat</span
+                >
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="gallery"
+          class="max-w-[1512px] mx-auto px-0 py-20 space-y-12"
+        >
+          <article class="space-y-4 text-[var(--text)] px-6">
+            <div
+              class="relative overflow-hidden w-full max-w-[1264px] h-[260px] md:h-[420px] mx-auto"
+            >
+              <img
+                src="./assets/images/bg11.jpg"
+                alt="Explore Saudi Arabia"
+                class="absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent"
+              ></div>
+              <div
+                class="relative z-10 h-full flex flex-col md:flex-row items-center md:items-center justify-between px-6 md:px-16"
+              >
+                <div
+                  class="w-full md:w-[553px] h-auto md:h-[128px] flex flex-col justify-center gap-2"
+                >
+                  <h3
+                    class="text-2xl md:text-[64px] font-bold leading-none text-white"
+                  >
+                    Rule of Behaviour
+                  </h3>
+                  <h3
+                    class="text-2xl md:text-[64px] font-bold leading-none text-white"
+                  >
+                    KSA
+                  </h3>
+                </div>
+                <button
+                  class="mt-4 md:mt-0 w-16 md:w-[86px] h-16 md:h-[86px] rounded-full bg-white/1 border border-white/40 grid place-items-center hover:bg-white/30 transition flex-shrink-0"
+                  aria-label="Explore more"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <footer class="bg-[#222222] text-[var(--text)] mt-auto">
+        <div
+          class="w-full max-w-[1512px] h-auto md:h-[352px] mx-auto px-6 md:px-[82px] py-12 flex flex-col md:flex-row items-start justify-between gap-8"
+        >
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <img
+              src="./assets/images/logo.png"
+              alt="Saudi Logo"
+              class="w-[267px] h-[148px] object-contain opacity-90"
+            />
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="flex gap-8 md:gap-[100px]">
+            <!-- About Section -->
+            <div class="w-[164px]">
+              <h3
+                class="font-poppins text-lg md:text-[25px] font-semibold leading-[106%] tracking-[-0.01em] text-[var(--text)] mb-[10px]"
+              >
+                About
+              </h3>
+              <ul class="flex flex-col gap-2 text-sm text-[var(--muted)]">
+                <li>
+                  <a href="about.html" class="hover:text-[var(--text)] transition"
+                    >About us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >News & Blogs</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="w-[164px]">
+              <h3
+                class="font-poppins text-lg md:text-[25px] font-semibold leading-[106%] tracking-[-0.01em] text-[var(--text)] mb-[10px]"
+              >
+                Contact
+              </h3>
+              <ul class="flex flex-col gap-2 text-sm text-[var(--muted)]">
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >Facebook</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Support Section -->
+            <div class="w-[164px]">
+              <h3
+                class="font-poppins text-lg md:text-[25px] font-semibold leading-[106%] tracking-[-0.01em] text-[var(--text)] mb-[10px]"
+              >
+                Support
+              </h3>
+              <ul class="flex flex-col gap-2 text-sm text-[var(--muted)]">
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >Support Centre</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-[var(--text)] transition"
+                    >Feedback</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Go to Top Button +-->
+    <button
+      id="goToTopBtn"
+      class="fixed bottom-8 right-8 w-14 h-14 bg-white/1 border-white/30 hover:bg-white/10 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible z-50"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script>
+      // Go to Top Button Functionality
+      const goToTopBtn = document.getElementById("goToTopBtn");
+
+      // Show/hide button on scroll
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 300) {
+          goToTopBtn.classList.remove("opacity-0", "invisible");
+          goToTopBtn.classList.add("opacity-100", "visible");
+        } else {
+          goToTopBtn.classList.remove("opacity-100", "visible");
+          goToTopBtn.classList.add("opacity-0", "invisible");
+        }
+      });
+
+      // Scroll to top on click
+      goToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
